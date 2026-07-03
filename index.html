@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion TTS Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🎙 Motion TTS Pro</h1>
+
+        <p class="subtitle">
+            Cartesia AI Voice Studio
+        </p>
+
+        <label>Cartesia API Key</label>
+
+        <input
+        id="apiKey"
+        type="password"
+        placeholder="Enter your API Key">
+
+        <label>Voice ID</label>
+
+        <input
+        id="voiceId"
+        value="58425b31-9732-4ff2-a39a-bad0f9d0fe9e">
+
+        <label>Language</label>
+
+        <select id="language">
+
+            <option value="bn">Bangla</option>
+
+            <option value="en">English</option>
+
+        </select>
+
+        <label>Script</label>
+
+        <textarea
+        id="text"
+        placeholder="Write your text here..."></textarea>
+
+        <div class="counter">
+
+            Characters:
+            <span id="count">
+                0
+            </span>
+
+        </div>
+
+        <button id="generate">
+
+            Generate Speech
+
+        </button>
+
+        <audio id="player" controls></audio>
+
+        <button id="download">
+
+            Download Audio
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
